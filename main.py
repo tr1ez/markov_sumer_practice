@@ -176,7 +176,7 @@ class ImageProcessorApp:
             x1, x2 = x2, x1
         if y1 > y2:
             y1, y2 = y2, y1
-        cv2.rectangle(self.image, (x1, y1), (x2, y2), (255, 0, 0), 2)
+        cv2.rectangle(self.image, (x1, y1), (x2, y2), (255, 0, 0), -1)
         self.show_image()
 
 
